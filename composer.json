@@ -1,16 +1,12 @@
 {
-    "name": "buibr/yii2-multi-select-widget-bs4",
-    "description": "Multiselect Bootstrap4 widget for Yii2.",
-    "keywords": ["yii", "extension", "widget", "multiselect", "bootstrap4"],
+    "name": "buibr/yii2-multiselect-bs4",
+    "description": "Multiple select element for Bootstrap 4",
     "type": "yii2-extension",
-    "homepage": "https://github.com/2amigos/yii2-multi-select-widget",
+    "keywords": ["muhiddin", "multiple-select", "yii2", "extension", "select", "widget", "multiple", "jquery"],
     "license": "BSD-3-Clause",
-    "authors": [
-        {
-            "name": "2amigOS! Consulting Group",
-            "email": "hola@2amigos.us",
-            "homepage": "http://2amigos.us",
-            "role": "Developer"
+    "authors": [{
+            "name": "Muxiddin Jumaniyazov",
+            "email": "hellomyhp@gmail.com"
         },
         {
             "name": "Burhan Ibrahimi",
@@ -19,34 +15,15 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "yiisoft/yii2": "*",
-        "yiisoft/yii2-bootstrap4": "^1.0@dev",
-        "npm-asset/bootstrap-multiselect": "0.9.*",
-        "npm-asset/multiselect": "0.9.*"
+
+    "support": {
+        "issues": "https://github.com/muhiddingithub/yii2-multiple-select/issues",
+        "source": "https://github.com/muhiddingithub/yii2-multiple-select"
     },
-    "require-dev": {
-        "phpunit/phpunit": "~6.0",
-        "friendsofphp/php-cs-fixer": "^2.0",
-        "squizlabs/php_codesniffer": "*",
-        "phpmd/phpmd": "@stable"
-    },
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "buibr\\multiselect\\": "src"
+            "muhiddin\\select\\": ""
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ]
+    }
 }
