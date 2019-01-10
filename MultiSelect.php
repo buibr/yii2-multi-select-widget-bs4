@@ -1,8 +1,8 @@
 <?php
 namespace buibr\select;
 
-use yii\bootstrap\InputWidget;
-use yii\bootstrap\Html;
+use yii\bootstrap4\InputWidget;
+use yii\bootstrap4\Html;
 use yii\helpers\Json;
 use yii\web\View;
 use buibr\select\MultiSelectAsset;
