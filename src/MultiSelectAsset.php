@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace buibr\multiselect;
+namespace buibr\select;
 
 use yii\web\AssetBundle;
 
@@ -15,7 +15,7 @@ use yii\web\AssetBundle;
  */
 class MultiSelectAsset extends AssetBundle
 {
-    public $sourcePath = '@buibr/multiselect/assets';
+    public $sourcePath = '@buibr/select/assets';
 
     public $css = [
         'css/multi-select.css',
