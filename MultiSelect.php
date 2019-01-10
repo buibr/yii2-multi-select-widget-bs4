@@ -1,8 +1,8 @@
 <?php
 namespace buibr\select;
 
-use yii\bootstrap4\InputWidget;
-use yii\bootstrap4\Html;
+use yii\bootstrap\InputWidget;
+use yii\bootstrap\Html;
 use yii\helpers\Json;
 use yii\web\View;
 use buibr\select\MultiSelectAsset;
@@ -17,7 +17,6 @@ class MultiSelect extends InputWidget
 
     public function run()
     {
-        
         if (!isset($this->options['css'])) {
             $this->options['id'] = $this->id;
         }

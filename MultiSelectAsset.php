@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace buibr\select;
+namespace muhiddin\select;
 
 use yii\web\AssetBundle;
 

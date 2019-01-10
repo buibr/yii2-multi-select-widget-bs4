@@ -25,7 +25,7 @@ Usage
 
 
 ```php 
-    use buibr\multiselect\MultiSelect; 
+    use buibr\select\MultiSelect; 
 
     echo $form->field($model, 'attribute')->widget(MultiSelect::className(), [
             'data' => $dataList,

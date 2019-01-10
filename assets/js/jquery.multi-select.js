@@ -124,7 +124,7 @@
         .attr('id', elementId+'-selection')
         .hide();
 
-      if ($option.attr('disabled') || ms.attr('disabled')){
+      if ($option.prop('disabled') || ms.prop('disabled')){
         selectedLi.addClass(that.options.disabledClass);
         selectableLi.addClass(that.options.disabledClass);
       }
@@ -181,16 +181,8 @@
         if (option.value !== undefined && option.value !== null &&
             that.$element.find("option[value='"+option.value+"']").length === 0){
           var $option = $('<option value="'+option.value+'">'+option.text+'</option>'),
-              $container = option.nested === undefined ? that.$element : $("optgroup[label='"+option.nested+"']"),
-              index = parseInt((typeof option.index === 'undefined' ? $container.children().length : option.index));
-
-          if (option.optionClass) {
-            $option.addClass(option.optionClass);
-          }
-
-          if (option.disabled) {
-            $option.prop('disabled', true);
-          }
+              index = parseInt((typeof option.index === 'undefined' ? that.$element.children().length : option.index)),
+              $container = option.nested === undefined ? that.$element : $("optgroup[label='"+option.nested+"']");
 
           $option.insertAt(index, $container);
           that.generateLisFromOption($option.get(0), index, option.nested);
@@ -372,7 +364,7 @@
         selectables.addClass('ms-selected').hide();
         selections.addClass('ms-selected').show();
 
-        options.attr('selected', 'selected');
+        options.prop('selected', true);
 
         that.$container.find(that.elemsSelector).removeClass('ms-hover');
 
@@ -422,7 +414,7 @@
       if (selections.length > 0){
         selectables.removeClass('ms-selected').show();
         selections.removeClass('ms-selected').hide();
-        options.removeAttr('selected');
+        options.prop('selected', false);
 
         that.$container.find(that.elemsSelector).removeClass('ms-hover');
 
@@ -454,7 +446,7 @@
       var ms = this.$element,
           values = ms.val();
 
-      ms.find('option:not(":disabled")').attr('selected', 'selected');
+      ms.find('option:not(":disabled")').prop('selected', true);
       this.$selectableUl.find('.ms-elem-selectable').filter(':not(.'+this.options.disabledClass+')').addClass('ms-selected').hide();
       this.$selectionUl.find('.ms-optgroup-label').show();
       this.$selectableUl.find('.ms-optgroup-label').hide();
@@ -473,7 +465,7 @@
       var ms = this.$element,
           values = ms.val();
 
-      ms.find('option').removeAttr('selected');
+      ms.find('option').prop('selected', false);
       this.$selectableUl.find('.ms-elem-selectable').removeClass('ms-selected').show();
       this.$selectionUl.find('.ms-optgroup-label').hide();
       this.$selectableUl.find('.ms-optgroup-label').show();
