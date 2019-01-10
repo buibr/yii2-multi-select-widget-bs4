@@ -16,12 +16,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require 2amigos/yii2-multi-select-widget "*"
+php composer.phar require buibr/yii2-multi-select-widget "*"
 ```
 or add
 
 ```json
-"2amigos/yii2-multi-select-widget" : "*"
+"buibr/yii2-multi-select-widget" : "*"
 ```
 
 to the require section of your application's `composer.json` file.
@@ -34,7 +34,7 @@ Usage for MultiSelect Bootstrap Plugin
 **Using a model**
  
 ```
-use dosamigos\multiselect\MultiSelect;
+use buibr\multiselect\MultiSelect;
 
 <?= $form->field($model, 'attribute')->widget(MultiSelect::className(),[
     'data' => ['super', 'natural'],
@@ -67,7 +67,7 @@ The functionality to use this plugin is actually the same as its an extension of
 changes its use is its set of configuration options. 
 
 ```
-use dosamigos\multiselect\MultiSelectListBox;
+use buibr\multiselect\MultiSelectListBox;
 use yii\web\JsExpression;
 
 <?= $form->field($model, 'attribute')->widget(MultiSelect::className(),[
