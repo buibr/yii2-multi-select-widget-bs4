@@ -7,13 +7,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require muhiddingithub/yii2-multiple-select "dev-master"
+php composer.phar require buibr/yii2-multiple-select "dev-master"
 ```
 
 or add
 
 ```
-"muhiddingithub/yii2-multiple-select": "dev-master"
+"buibr/yii2-multiple-select": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -25,7 +25,9 @@ Usage
 
 
 ```php 
-    echo $form->field($model, 'attribute')->widget(\muhiddin\select\MultiSelect::className(), [
+    use buibr\multiselect\MultiSelect; 
+
+    echo $form->field($model, 'attribute')->widget(MultiSelect::className(), [
             'data' => $dataList,
             'id' => 'multiple-select',
             'options' => [

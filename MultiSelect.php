@@ -1,11 +1,11 @@
 <?php
-namespace buibr\select;
+namespace buibr\multiselect;
 
 use yii\bootstrap4\InputWidget;
 use yii\bootstrap4\Html;
 use yii\helpers\Json;
 use yii\web\View;
-use buibr\select\MultiSelectAsset;
+use buibr\multiselect\MultiSelectAsset;
 
 class MultiSelect extends InputWidget
 {
