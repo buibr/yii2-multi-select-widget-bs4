@@ -7,7 +7,7 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace dosamigos\multiselect;
+namespace buibr\multiselect;
 
 use yii\base\InvalidParamException;
 use yii\helpers\Json;
@@ -19,7 +19,7 @@ use yii\helpers\Json;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\multiselect
+ * @package buibr\multiselect
  */
 class MultiSelectListBox extends MultiSelect
 {

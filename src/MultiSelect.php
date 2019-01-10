@@ -7,7 +7,7 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace dosamigos\multiselect;
+namespace buibr\multiselect;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -23,7 +23,7 @@ use yii\widgets\InputWidget;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
- * @package dosamigos\widgets
+ * @package buibr\widgets
  */
 class MultiSelect extends InputWidget
 {
