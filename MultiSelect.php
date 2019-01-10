@@ -17,6 +17,7 @@ class MultiSelect extends InputWidget
 
     public function run()
     {
+        
         if (!isset($this->options['css'])) {
             $this->options['id'] = $this->id;
         }
