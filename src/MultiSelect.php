@@ -22,10 +22,10 @@ class MultiSelect extends InputWidget
             $this->options['id'] = $this->id;
         }
         if ($this->selectAll)
-            echo Html::a(\Yii::t('app', 'select all'), '#', ['id' => $this->id . '-select-all']);
+            echo Html::a(\Yii::t('apps', 'select all'), '#', ['id' => $this->id . '-select-all']);
 
         if ($this->deselectAll)
-            echo Html::a(\Yii::t('app', 'deselect all'), '#', ['id' => $this->id . '-deselect-all']);
+            echo Html::a(\Yii::t('apps', 'deselect all'), '#', ['id' => $this->id . '-deselect-all']);
 
         MultiSelectAsset::register($this->getView());
         if (isset($this->model)) {
