@@ -1,7 +1,7 @@
 {
-    "name": "2amigos/yii2-multi-select-widget",
-    "description": "Multiselect Bootstrap widget for Yii2.",
-    "keywords": ["yii", "extension", "widget", "multiselect"],
+    "name": "buibr/yii2-multi-select-widget-bs4",
+    "description": "Multiselect Bootstrap4 widget for Yii2.",
+    "keywords": ["yii", "extension", "widget", "multiselect", "bootstrap4"],
     "type": "yii2-extension",
     "homepage": "https://github.com/2amigos/yii2-multi-select-widget",
     "license": "BSD-3-Clause",
@@ -11,13 +11,19 @@
             "email": "hola@2amigos.us",
             "homepage": "http://2amigos.us",
             "role": "Developer"
+        },
+        {
+            "name": "Burhan Ibrahimi",
+            "email": "burhan@wflux.pro",
+            "homepage": "http://wflux.pro",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "yiisoft/yii2": "*",
-        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-bootstrap4": "*",
         "npm-asset/bootstrap-multiselect": "0.9.*",
         "npm-asset/multiselect": "0.9.*"
     },
@@ -29,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dosamigos\\multiselect\\": "src"
+            "buibr\\multiselect\\": "src"
         }
     },
     "extra": {
