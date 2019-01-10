@@ -23,7 +23,10 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "buibr\\select\\": ""
+            "buibr\\multiselect\\": "/src"
         }
+    },
+    "require": {
+        "buibr/yii2-multiselect-bs4": "^1.1"
     }
 }
