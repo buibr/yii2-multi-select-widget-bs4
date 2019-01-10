@@ -23,7 +23,7 @@
     "prefer-stable": true,
     "require": {
         "yiisoft/yii2": "*",
-        "yiisoft/yii2-bootstrap4": "*",
+        "yiisoft/yii2-bootstrap4": "^1.0@dev",
         "npm-asset/bootstrap-multiselect": "0.9.*",
         "npm-asset/multiselect": "0.9.*"
     },
