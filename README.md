@@ -7,13 +7,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require buibr/yii2-multiple-select "dev-master"
+php composer.phar require buibr/yii2-multiselect-bs4 "dev-master"
 ```
 
 or add
 
 ```
-"buibr/yii2-multiple-select": "dev-master"
+"buibr/yii2-multiselect-bs4": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
